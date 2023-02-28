@@ -82,14 +82,75 @@
     <div class="modal">
         <div class="modal__half modal__about">
             <h3 class="modal__title">Here's a bit about me</h3>
-            <h4 class="modal__sub-title modal__sub-title--about"></h4>
+            <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
             <p class="modal__para">
-                I'm a 21 year-old Australian frontend software engineer with experience developing websites for top-tech companies like Google and Canva.
+                I’m a 21 year old Australian <b class="primary-color">front-end Software Engineer</b> with a strong passion for developing websites with <b class="primary-color">great user experiences</b>.
                 <br>
-                I currently solve extremely difficult engineering problems every day with React, TypeScript and MobX in Canva's Video team
+                I currently work on extremely difficult engineering problems and learn from a team consisting of some of the most <b class="primary-color">talented</b> and <b class="primary-color">experienced</b> software engineers everyday.
             </p>
+            <div class="modal__languages">
+                <figure class="modal__language click">
+                    <img class="modal__language--img" src="./assets/HTML5_Badge.svg.png" alt="">
+                    <span class="language__name">HTML</span>
+                </figure>
+                <figure class="modal__language click">
+                    <img class="modal__language--img" src="./assets/css-131-722685.webp" alt="">
+                    <span class="language__name">CSS</span>
+                </figure>
+                <figure class="modal__language click">
+                    <img class="modal__language--img" src="./assets/javascript-1-225993.webp" alt="">
+                    <span class="language__name">JavaScript</span>
+                </figure>
+                <figure class="modal__language click">
+                    <img class="modal__language--img" src="./assets/react-3-1175109.webp" alt="">
+                    <span class="language__name">React</span>
+                </figure>
+                <figure class="modal__language click">
+                    <img class="modal__language--img" src="./assets/typescript-3521774-2945272.webp" alt="">
+                    <span class="language__name">TypeScript</span>
+                </figure>
+                <figure class="modal__language click">
+                    <img class="modal__language--img" src="./assets/mobx.png" alt="">
+                    <span class="language__name">Mobx</span>
+                </figure>
+                <figure class="modal__language click">
+                    <img class="modal__language--img" src="./assets/vue-282497.webp" alt="">
+                    <span class="language__name">Vue</span>
+                </figure>
+                <figure class="modal__language click">
+                    <img class="modal__language--img" src="./assets/nuxt-dot-js-3628959-3030184.webp" alt="">
+                    <span class="language__name">Nuxt</span>
+                </figure>
+            </div>
         </div>
-        <div class="modal__half modal__contact">Let's have a chat</div>
+        <div class="modal__half modal__contact">
+            <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+            <h3 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h3>
+            <form action="" id="contact__form">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input" name="user_name" type="text" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input class="input" name="user__email" type="email" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input" name="user_message" type="text" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit click">Send it my way</button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay__success">
+                Appreciate the message! 
+                <br>
+                Looking forward to speaking to you soon.
+            </div>
+        </div> 
+        <i class="fas fa-times modal__exit"></i>
     </div>
     <section id="projects">
         <div class="container">
