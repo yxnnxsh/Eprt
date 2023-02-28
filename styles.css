@@ -31,10 +31,6 @@ a {
     text-decoration: none ;
 }
 
-body {
-    /* padding: 1rem; */
-
-}
 
 .primary-color {
     color: var(--primary-color);
@@ -81,6 +77,28 @@ button {
 .click:active {
     transform: scale(0.8);
 }
+
+.link__hover-effect {
+    position: relative;
+}
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    transition: all .3s ease;
+}
+
+
+.link__hover-effect:hover::after   {
+    left: 0;
+    width: 100%;
+}
+
 
 /* NAVIGATION */
 
@@ -220,7 +238,36 @@ nav {
 }
 
 
-/* PROJECTS */
+
+/* MODAL */
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1100px;
+    height: 700px;
+    box-shadow: 0 1.25rem 5rem rgb(0, 0, 0, 0.55);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.modal__half {
+    width: 50% ;
+}
+
+.modal__about {
+    background-color: rgb(245, 245, 245);
+}
+.modal__contact {
+    background-color: #242424;
+}
+
+
+/* PROJECTS */  
 
 .section__title {
     text-align: center;
