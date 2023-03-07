@@ -264,6 +264,7 @@ h2 {
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
@@ -277,10 +278,11 @@ h2 {
 }
 
 .book__img--wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     border-radius: 4px;
     overflow: hidden;
     display: flex;
+    width: 100%;
 }
 
 .book__title {
