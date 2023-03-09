@@ -6,9 +6,9 @@
 
 .menu__wrapper {
     display: none;
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    position: relative;
+    top: -24px;
+    /* right: 24px; */
     z-index: 99999;
 }
 
@@ -109,14 +109,14 @@
 .menu__div1 {
     background: var(--overlay-color);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 400vw;
+    height: 400vw;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center; 
     transform: scale(0);
-    transition: all 0.4s ease;
+    transition: all 0.6s ease;
 }
 
 .menu__div2 {
