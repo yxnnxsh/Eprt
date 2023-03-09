@@ -50,7 +50,6 @@ renderBooks();
 // and passes it as an argument for render books
 function filterBooks(sortOptionDisplay, sortOptionAlgo) {
   document.querySelector(".textbox").value = sortOptionDisplay;
-  console.log(sortOptionAlgo);
   renderBooks(sortOptionAlgo);
 }
 

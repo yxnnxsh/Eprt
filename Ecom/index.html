@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="sort.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
     <title>Ecom</title>
@@ -17,26 +20,21 @@
           <ul class="nav__links">
             <li><a class="nav__link click" href="#">Home</a></li>
             <li><a class="nav__link no-cursor click" href="#">Contact</a></li>
-            <li><a class="nav__link click nav__link--primary" href="#">Books</a></li>
+            <li><a class="nav__link click nav__link--primary" href="#features">Books</a></li>
           </ul>
-          <button class="btn__menu" onclick="openMenu()">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="menu__backdrop">
-            <div class="btn__menu btn__menu--close" onclick="closeMenu()">
-              <i class="fas fa-times"></i>
+          <div class="menu__wrapper">
+            <div class="hamburger" onclick="rotateAnimation()"><div class="hamburger__lines"></div></div>
+            <div class="menu">
+              <div class="menu__div1">
+                <div class="menu__div2">
+                  <ul class="menu__list">
+                    <li class="menu__link click"><a onclick="rotateAnimation()" href="#">Home</a></li>
+                    <li class="menu__link click no-cursor"><a class="no-cursor"  href="#">Contact</a></li>
+                    <li class="menu__link click"><a onclick="rotateAnimation()" href="#features">Books</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <ul class="menu__links">
-              <li class="menu__list">
-                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link" onclick="closeMenu()">Books</a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
-              </li>
-            </ul>
           </div>
         </div>
       </nav>

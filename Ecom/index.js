@@ -1,7 +1,4 @@
-function openMenu() {
-  document.body.classList += "menu--open";
-}
-
-function closeMenu() {
-  document.body.classList.remove("menu--open");
+let menu = document.querySelector(".menu__wrapper");
+function rotateAnimation() {
+  menu.classList.toggle("active");
 }
